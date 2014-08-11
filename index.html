@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Free and Open Info - IS 683 Project Site - Summer 2014 NJIT</title>
+	<meta name="keywords" content="open source, free software, news, tutorials" />
+	<meta name="description" content="Open source news and information site" />
+	    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+  	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  	<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+  	<script src="js/spb_functions.js"></script>
+  	
+  	<!-- grab some free web fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+	<!-- 	<link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'> -->
+	<!-- 	<link href='http://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'> -->
+	<!-- 	<link href='http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps' rel='stylesheet' type='text/css'> -->
+    <script src="js/respond.js"></script>
+</head>
+<body>
+<!-- begin centered layout -->
+<div class="container">
+	<div id="centeredparent">
+		<!-- begin header -->
+		<div id="header">
+			<a href="http://distrowatch.com/"><img src="img/tux-patriot.jpg" alt="tux pengiun" class="hdr-logo-L grayscale pull-left"></a>
+			<span id="hdr-txt"> Free &amp; Open Info</span>
+			<img src="img/bsd_daemon_tile_coaster.jpg" alt="bsd beastie" class="hdr-logo-R grayscale">
+		</div>
+		<!-- /end header -->
+
+		<!-- nav links -->
+	    <div class="row" id="nav">
+	    	<div class="col-md-3 col-xs-6">
+	            <a href="#latest_articles">
+	            	<p class="nav-txt">News<img src="img/newspaper-128.png" alt="" class="nav-icon"></p></a>
+	        </div>
+	        <div class="col-md-3 col-xs-6">
+				<a href="http://www.github.com">
+					<p class="nav-txt">Projects<img src="img/code_collab-red.png" alt="Open Source Projects Icon" class="nav-icon-wide grayscale"></p></a>
+	        </div>
+	        <div class="col-md-3 col-xs-6">
+	        	<a href="https://www.youtube.com/results?search_query=linux+tutorial+for+beginners">
+	        	<p class="nav-txt">Tutorials<img src="img/blackboard_icon-tr.png" alt="Open Source Software Tutorials Icon" class="nav-icon grayscale"></p></a>
+	        </div>
+	        <div class="col-md-3 col-xs-6">
+	        	<a href="http://opensource.org/">
+	        	<p class="nav-txt">Community<img src="img/community-icon-tr.png" alt="Open Source Developer Community" class="nav-icon-lg grayscale"></p></a>
+	        </div>
+		   	<div id="reg-container" class="jumbotron sm-txt ui-accordion-content">
+	        	<div id="reg-w-logo">
+					<div id="logo-parent" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 pull-left">
+		    			<img src="img/logo1_opt.png" alt="Free and Open Source Information Site Logo" class="logo jumbotronwidth">
+		    		</div>
+					<div id="right-reg-area" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 pull-right">
+						<div id="accordion" class="sm-txt ui-accordion">
+				    		<h3 class="ui-accordion-header">hide this</h3>
+				    		<div class="jumbotronwidth ui-accordion-content">
+								<p id="reg-txt">Create your Free &amp; Open user profile to track releases &amp; related tech developments</p>
+					    		<!-- registration input area  -->
+							    <div class="inp-txt inline-L clr-bkg">Name: <input id="inp-short" type="text" name="Name" /></div>
+								<div class="inp-txt inline-L clr-bkg">Email: <input id="inp-long" type="text" name="EmailAddr" /></div>
+							    <div class="inp-txt inline-L clr-bkg">
+							    	<!-- a class="ff red button" href="javascript:void(0);" onclick="$(this).closest('form').submit();" onclick="return clicked();">Register</a -->
+							    	<input class="ff red button" type="submit" onclick="return clicked2();" value="Register" />
+							    </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br class="clearBoth" />
+	   		</div>
+	    </div>
+
+
+	   	<div id="content-w-sidebar">
+
+	   	<!-- begin right sidebar -->
+		<div id="rightsidebar">
+			<div id="side_button">
+				<ul>
+					<li><a href="#">MyProfile</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Archives</a></li>
+					<li><a href="http://www.internethalloffame.org/brief-history-internet">ISOC Hall of Fame</a></li>
+				</ul>
+			</div>
+		</div>		
+		<!-- /end right sidebar -->
+
+	   	<div id="content-parent">
+			<!-- begin content panes -->
+			<div class="content">
+				<h2><a id="latest_articles">Open Source News &amp; Articles</a></h2>
+				<ul>
+					<li><a href="http://www.infoworld.com/d/open-source-software/the-golden-age-of-open-source-246700">This is the golden age of open source</a></li>
+					<li><a href="https://blogs.apache.org/OOo/entry/the_apache_openoffice_project_announce">The Apache OpenOffice project announce the release of Apache OpenOffice 4.1</a></li>
+					<li><a href="http://www.infoworld.com/t/office-software/libreoffice-43-boosts-document-compatibility-247323">LibreOffice 4.3 boosts document compatibility</a></li>
+					<li><a href="http://events.linuxfoundation.org/events/cloudopen-north-america/program/about">CloudOpen Conference Chicago, IL August 20 - 22, 2014</a></li>
+				</ul>
+			</div>
+
+			<div class="content">
+				<h2>Open Source Release &amp; Development Notifications</h2>
+				<ul>
+					<li><a href="http://httpd.apache.org/download.cgi#apache24">Apache HTTP Server 2.4.10  (released 2014-07-21)</a></li>
+					<li><a href="http://www.libreoffice.org/download/libreoffice-fresh">LibreOffice 4.3.0 (Last modified: Sun, 27 Jul 2014 20:46:51 GMT Unix time: 1406494011)</a></li>
+				</ul>
+			</div>
+
+			<div class="content">
+				<h2>Popular Free &amp; Open Source Software Licenses</h2>
+				<table class="hoverTable">
+				  <tr onclick="document.location='http://creativecommons.org/licenses/by/4.0/';">
+				  	<td>Creative Commons</td>
+					<td><img class="mini-round" src="img/cc.png" alt="Create Commons Logo Image"></td>
+				  </tr>
+				  <tr onclick="document.location='http://www.gnu.org/copyleft/gpl.html';">
+				    <td>GNU General Public License</td>
+				    <td><img class="mini-round" src="img/gnu-circle.png" alt="GNU Logo Image"></td>
+				  </tr>
+		  		  <tr onclick="document.location='http://c2.com/cgi/wiki?CopyLeft';">
+				    <td>CopyLeft</td>
+				    <td><img class="mini-round" src="img/512px-Copyleft.svg.png" alt="CopyLeft Logo Image"></td>
+				  </tr>
+				  <tr onclick="document.location='http://www.apache.org/licenses/';">
+				    <td>Apache Software Foundation</td>
+				    <td><img class="mini-orig" src="img/169px-ASF-logo.svg.png" alt="Apache Software Foundation Logo Image"></td>
+				  </tr>
+				  <tr>
+				    <td>WTFPL</td>
+				    <td></td>
+				  </tr>
+				</table>
+			</div>
+
+		<!-- /end content-parent -->
+		</div>
+		</div>
+		<!-- begin footer -->
+		<div id="footer">
+			<ul>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Sitemap</a></li>
+				<li><a href="#">Borrowed Content Attribution</a></li>
+			</ul>
+		</div>
+		<!-- /end footer -->
+
+	<!-- /end centeredparent -->
+	</div>
+</div>
+<!-- /end parent container -->
+
+</body>
+</html>
